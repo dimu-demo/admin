@@ -1,10 +1,10 @@
 const CACHE_NAME = 'ot-doner-v1';
+// В этом репозитории только админ-панель: worker.html и manifest.json
+// отсутствовали, и из-за них cache.addAll() падал на install целиком.
 const urlsToCache = [
   './',
   './index.html',
   './admin.html',
-  './worker.html',
-  './manifest.json',
   'https://cdn.tailwindcss.com',
   'https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Rubik:wght@400;500;600;700&display=swap',
   'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2'
